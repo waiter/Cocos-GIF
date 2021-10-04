@@ -4,7 +4,7 @@ const { ccclass, property, requireComponent, executeInEditMode } = cc._decorator
 
 @ccclass
 @requireComponent(cc.Sprite)
-@executeInEditMode
+// @executeInEditMode
 export default class CCGIF extends cc.Component {
   delays = [];
   sp: cc.Sprite;
