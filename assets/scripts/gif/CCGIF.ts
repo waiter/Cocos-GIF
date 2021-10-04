@@ -1,9 +1,10 @@
 import { GIFFrameData } from './GIFParser';
 
-const { ccclass, property, requireComponent } = cc._decorator;
+const { ccclass, property, requireComponent, executeInEditMode } = cc._decorator;
 
 @ccclass
 @requireComponent(cc.Sprite)
+@executeInEditMode
 export default class CCGIF extends cc.Component {
   delays = [];
   sp: cc.Sprite;
